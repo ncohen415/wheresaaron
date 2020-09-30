@@ -709,19 +709,17 @@ textarea {
 a, a:hover {
   text-decoration: none; }
 
-body {
-  background: url(/Users/nathancohen/Desktop/coding-projects/aaron/img/branding/background.JPG) 50% fixed no-repeat;
-  background-size: cover; }
-
 .site-header-container {
-  background: rgba(255, 255, 255, 0.8);
+  background: white;
   text-align: center;
-  color: white;
   width: 100%;
   font-size: large;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed; }
+  .site-header-container img {
+    max-width: 250px !important;
+    padding-bottom: 15px; }
   .site-header-container ul {
     list-style-type: none;
     display: flex;
@@ -736,21 +734,49 @@ body {
     .site-header-container ul .nav-item:hover {
       color: black; }
 
-.heading-wrapper {
+.start-container {
   display: flex;
-  justify-content: center;
-  padding-top: 120px;
-  padding-bottom: 60px; }
-  .heading-wrapper h1 {
-    letter-spacing: .2em;
-    font-size: 100px; }
+  flex-direction: column;
+  padding-top: 260px;
+  padding-bottom: 60px;
+  background-image: url(/Users/nathancohen/Desktop/coding-projects/wheresaaron/img/aaron/forrest.jpg); }
+  .start-container img {
+    width: 500px;
+    max-width: 500px !important;
+    max-height: fit-content;
+    object-fit: contain; }
+  .start-container .start-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background: rgba(209, 156, 76, 0.8); }
+  .about-container .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    .about-container .section-header h1 {
+      letter-spacing: .2em; }
+  .about-container .about-content {
+    display: flex;
+    flex-direction: row; }
+    .about-container .about-content img {
+      max-width: 40%;
+      border-radius: 100%; }
 
 .music-container {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 60px;
-  background: rgba(100, 100, 100, 0.8); }
+  background: rgba(34, 139, 34, 0.8); }
   .music-container .section-header {
     display: flex;
     flex-direction: row;
@@ -763,11 +789,26 @@ body {
     display: inline-flex;
     justify-content: space-evenly; }
 
-.video-container {
+.events-container {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 60px; }
+  .events-container .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    .events-container .section-header h1 {
+      letter-spacing: .2em; }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background: rgba(209, 156, 76, 0.8); }
   .video-container .section-header {
     display: flex;
     flex-direction: row;
@@ -776,7 +817,7 @@ body {
     padding-bottom: 30px; }
     .video-container .section-header h1 {
       letter-spacing: .2em; }
-  .video-container .video-1 {
+  .video-container .video-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center; }
@@ -786,5 +827,19 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-top: 50%; }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px; }
+  .contact-container .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    .contact-container .section-header h1 {
+      letter-spacing: .2em; }
 
 /*# sourceMappingURL=styles.css.map */
