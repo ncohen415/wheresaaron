@@ -1,8 +1,30 @@
+@media (max-width: 767px) {
+  .album {
+    display: none; }
+
+  .dropdown {
+    padding-top: 10px;
+    display: none !important;
+    flex-direction: column !important; }
+    .dropdown.show {
+      display: flex !important; }
+
+  .nav li {
+    font-size: 24px; }
+
+  .about-wrapper {
+    flex-direction: column !important;
+    justify-content: center; }
+    .about-wrapper img {
+      padding-bottom: 20px; }
+    .about-wrapper .about-text {
+      margin-right: 50px; } }
 a, a:hover {
   text-decoration: none; }
 
 .site-container {
-  background: black; }
+  background: black;
+  overflow-x: hidden; }
 
 .site-header-container {
   background: black;
@@ -14,22 +36,24 @@ a, a:hover {
   position: fixed;
   border-bottom: solid;
   border-color: white; }
+  .site-header-container .collapse-nav {
+    background-color: black; }
   .site-header-container img {
     max-width: 250px !important;
     padding-bottom: 15px; }
-  .site-header-container ul {
+  .site-header-container .nav {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center; }
-    .site-header-container ul li {
+    .site-header-container .nav li {
       padding: 0px 20px 0px 20px; }
-    .site-header-container ul .nav-item {
-      color: #c0c0c0;
+    .site-header-container .nav .nav-item {
+      color: #696969;
       transition: color .5s ease;
       display: block; }
-    .site-header-container ul .nav-item:hover {
-      color: black; }
+    .site-header-container .nav .nav-item:hover {
+      color: white; }
 
 .start-container {
   display: flex;
@@ -38,33 +62,34 @@ a, a:hover {
   padding-bottom: 30px;
   border-bottom: solid;
   border-color: white; }
-  .start-container h3 {
-    color: white; }
-  .start-container p {
-    color: white; }
-  .start-container ul {
-    padding-top: 30px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .start-container ul li {
-      margin-right: -40px; }
-  .start-container .social .social-icon {
-    height: auto;
-    max-width: 70%; }
-  .start-container .album-wrapper {
-    background: green;
-    padding: 5px 5px 5px 5px; }
-    .start-container .album-wrapper .album {
-      width: 400px;
-      max-width: 400px !important;
-      max-height: fit-content;
-      object-fit: contain; }
   .start-container .start-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: center; }
+    .start-container .start-wrapper .album-wrapper {
+      background: green;
+      padding: 5px 5px 5px 5px; }
+      .start-container .start-wrapper .album-wrapper .album {
+        width: 400px;
+        max-width: 400px !important;
+        max-height: fit-content;
+        object-fit: contain; }
+  .start-container .social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .start-container .social-wrapper ul {
+      padding-top: 30px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .start-container .social-wrapper ul li {
+        margin-left: -20px;
+        margin-right: -20px; }
+        .start-container .social-wrapper ul li .social-icon {
+          height: auto;
+          max-width: 70%; }
 
 .about-container {
   display: flex;
@@ -79,6 +104,10 @@ a, a:hover {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    .about-container .about-wrapper img {
+      max-width: 5%;
+      max-height: auto;
+      display: inline-block; }
   .about-container .section-header {
     display: flex;
     flex-direction: row;
@@ -96,7 +125,8 @@ a, a:hover {
       max-width: 50%;
       border-radius: 50%; }
   .about-container .about-text {
-    margin-left: 60px; }
+    margin-left: 60px;
+    margin-right: 60px; }
 
 .music-container {
   display: flex;
@@ -116,7 +146,10 @@ a, a:hover {
       color: white; }
   .music-container .tracks-wrapper {
     display: inline-flex;
-    justify-content: space-evenly; }
+    justify-content: center; }
+    .music-container .tracks-wrapper .soundcloud-track {
+      padding-left: .5em;
+      padding-right: .5em; }
 
 .events-container {
   display: flex;
@@ -154,7 +187,9 @@ a, a:hover {
   .video-container .video-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    padding-left: .5em;
+    padding-right: .5em; }
 
 .contact-container {
   display: flex;

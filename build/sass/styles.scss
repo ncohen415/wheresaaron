@@ -6,10 +6,10 @@ $content-font: 'PT Sans', sans-serif;
 // Mixins
 @mixin bp($point) {
   
-  $small: "(min-width: 767px)";
-  $medium: "(min-width: 992px)";
-  $large: "(min-width: 1200px)";
-  $xl: "(min-width: 1800px)";
+  $small: "(max-width: 767px)";
+  $medium: "(max-width: 992px)";
+  $large: "(max-width: 1200px)";
+  $xl: "(max-width: 1800px)";
 
   @if $point == small {
     @media #{$small} { @content; }
@@ -26,6 +26,44 @@ $content-font: 'PT Sans', sans-serif;
 
 }
 
+@include bp(small) {
+
+  //HEADER & START SECTIONS
+
+  .album{
+    display: none;
+  }
+
+  .dropdown{
+    padding-top: 10px;
+    display: none !important;
+    flex-direction: column !important;
+
+      &.show{
+        display: flex !important;
+      }
+  }
+
+  .nav li{
+    font-size: 24px;
+  }
+
+
+  //ABOUT SECTION
+
+  .about-wrapper{
+    flex-direction: column !important;
+    justify-content: center;
+    img{
+      padding-bottom: 20px;
+    }
+    .about-text{
+      margin-right: 50px;
+    }
+  }
+
+
+}
 
 
 // GLOBAL
@@ -35,6 +73,7 @@ a, a:hover{
 
 .site-container{
   background: black;
+  overflow-x: hidden;
 }
 
 
@@ -49,11 +88,14 @@ a, a:hover{
   position: fixed;
   border-bottom: solid;
   border-color: white;
+  .collapse-nav{
+    background-color: black;
+  }
   img{
     max-width: 250px !important;
     padding-bottom: 15px;
   }
-    ul{
+    .nav{
       list-style-type: none;
       display: flex;
       flex-direction: row;
@@ -62,13 +104,13 @@ a, a:hover{
         padding: 0px 20px 0px 20px
       }
       .nav-item{
-        color: #c0c0c0;
+        color: #696969;
         transition: color .5s ease;
         display: block;
         
       }
       .nav-item:hover{
-        color: black;
+        color: white;
       }
       
     }
@@ -76,7 +118,6 @@ a, a:hover{
 
 
 //START
-
 .start-container{
   display: flex;
   flex-direction: column;
@@ -84,44 +125,43 @@ a, a:hover{
   padding-bottom: 30px;
   border-bottom: solid;
   border-color: white;
-  h3{
-    color: white;
-  }
-  p{
-    color: white;
-  }
-  ul{
-    padding-top: 30px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    li{
-      margin-right: -40px;
-    }
-  }
-  .social{
-    .social-icon{
-      height: auto;
-      max-width: 70%;
-    }
-  }
-  .album-wrapper{
-    background: green;
-    padding: 5px 5px 5px 5px;
-    .album{
-      width: 400px;
-      max-width: 400px !important;
-      max-height: fit-content;;
-      object-fit: contain;
-    }
-  }
   .start-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    .album-wrapper{
+      background: green;
+      padding: 5px 5px 5px 5px;
+      .album{
+        width: 400px;
+        max-width: 400px !important;
+        max-height: fit-content;;
+        object-fit: contain;
+        }
+      }
   }
+  .social-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ul{
+      padding-top: 30px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li{
+        margin-left: -20px;
+        margin-right: -20px;
+        .social-icon{
+          height: auto;
+          max-width: 70%;
+        }
+      }
+    }  
+  }   
 }
+
 
   // ABOUT
   .about-container{
@@ -138,6 +178,12 @@ a, a:hover{
       display: flex;
       flex-direction: row;
       align-items: center;
+      img{
+
+        max-width: 5%;
+        max-height: auto;
+        display: inline-block;
+      }
     }
     .section-header{
       display: flex;
@@ -161,6 +207,7 @@ a, a:hover{
     }
     .about-text{
       margin-left: 60px;
+      margin-right: 60px;
     }
 
   }
@@ -186,7 +233,12 @@ a, a:hover{
     }
     .tracks-wrapper{
       display: inline-flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      .soundcloud-track{
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+
     }
   }
 
@@ -234,6 +286,8 @@ a, a:hover{
       display: flex;
       flex-direction: row;
       justify-content: center;
+      padding-left: .5em;
+      padding-right: .5em;
     }
   }
 

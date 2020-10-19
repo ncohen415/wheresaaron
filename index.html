@@ -44,12 +44,15 @@
 
     <!-- Main Content -->
 
-    <!--HEADER-->
+
     <div class="site-container">
+        <!--HEADER-->
         <div class="site-header-container">
             <div class="site-header-wrapper">
-                <img src="img/aaron/full-logo-5px.png" alt="">
-                <ul class="nav" role="navigation">
+                <a class="collapse-nav" href="#">
+                    <img src="img/aaron/full-logo-5px.png" alt="">
+                </a>
+                <nav class="nav dropdown" role="navigation">
                     <a class="nav-item" href="#">
                         <li>Home</li>
                     </a>
@@ -68,7 +71,7 @@
                     <a class="nav-item" href="#">
                         <li>Contact</li>
                     </a>
-                </ul>
+                </nav>
             </div>
         </div>
 
@@ -77,30 +80,28 @@
         <div class="start-container">
             <div class="start-wrapper">
                 <div class="album-wrapper">
-                    <img class="album" src="img/aaron/airborn-front.jpg" alt="">
+                    <a href="https://open.spotify.com/album/66jrTwvzFmeboj10W5yZvl?si=cEBERc25Sea6l4FNAUHMvA">
+                        <img class="album" src="img/aaron/airborn-front.jpg" alt="">
+                    </a>
+                    <iframe src="https://open.spotify.com/embed/album/66jrTwvzFmeboj10W5yZvl" width="300" height="400"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
-                <div class=" release">
-                    <div class="release-header">
-                        <h3>AiRBORN</h3>
-                        <p>Stream now on all platforms</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="social">
+            </div>
+            <div class="social-wrapper">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/theinfamousgallagher/?hl=en">
                             <img class="social-icon" src="socials/instagram.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://soundcloud.com/fuck-wheres-aaron">
                             <img class="social-icon" src="socials/soundcloud.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://open.spotify.com/artist/5QJcyhSDjCoxGSTRKG0VcS">
                             <img class="social-icon" src="socials/spotify.png" alt="">
                         </a>
                     </li>
@@ -129,18 +130,20 @@
                 <h1>ABOUT</h1>
             </div>
             <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="img/aaron/_S0A1718.jpg" alt="">
+                </div>
                 <div class="about-text">
                     <p>I'm baby truffaut 8-bit coloring book meggings 3 wolf moon four loko. Aesthetic meggings
                         sustainable forage pitchfork, fingerstache post-ironic small batch glossier banjo echo park
                         salvia prism ugh. Vaporware bicycle rights tumeric, food truck pop-up cold-pressed stumptown
-                        gochujang tbh raclette. Austin hexagon organic tousled kale chips neutra palo santo before they
-                        sold out hashtag brooklyn vegan umami keytar. Flexitarian air plant jean shorts iPhone glossier
-                        shoreditch lumbersexual trust fund chambray truffaut.
+                        gochujang tbh raclette.
                     </p>
+                    <a href="#">
+                        <img src="img/aaron/half-logo5px.png" alt="">
+                    </a>
                 </div>
-                <div class="about-image">
-                    <img src="img/aaron/_S0A1718.jpg" alt="">
-                </div>
+
             </div>
         </div>
 
@@ -151,22 +154,22 @@
             </div>
 
             <div class="tracks-wrapper">
-                <div class="track-1">
+                <div class="soundcloud-track">
                     <iframe width="100%" height="300" scrolling="no" frameborder="yes" allow="autoplay"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800614486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                 </div>
                 <!--track1-->
-                <div class="track-2">
+                <div class="soundcloud-track">
                     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/663175055&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                 </div>
                 <!--track2-->
-                <div class="track-3">
+                <div class="soundcloud-track">
                     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/280367172&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                 </div>
                 <!--track3-->
-                <div class="track-4">
+                <div class="soundcloud-track">
                     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778687018&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                 </div>
@@ -193,7 +196,8 @@
             <div class="video-wrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jsnjr-eVjaM" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
 
