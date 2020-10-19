@@ -28,23 +28,38 @@ $content-font: 'PT Sans', sans-serif;
 
 @include bp(small) {
 
-  //HEADER & START SECTIONS
+  //HEADER
 
-  .album{
-    display: none;
-  }
-
-  .dropdown{
-    padding-top: 10px;
-    display: none !important;
-    flex-direction: column !important;
+  .site-header-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .dropdown{
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column !important;
+      display: none !important;
+      font-size: 24px;
       &.show{
         display: flex !important;
       }
   }
+}
 
-  .nav li{
-    font-size: 24px;
+  .collapse-nav{
+    display: block !important;
+  }
+
+  .logo{
+    display: none;
+  }
+  
+  
+  
+  //START SECTION
+
+  .album{
+    display: none;
   }
 
 
@@ -100,10 +115,13 @@ html{
   border-bottom: solid;
   border-color: white;
   .collapse-nav{
+    display: none;
+  }
+  .logo{
     background-color: black;
   }
   img{
-    max-width: 250px !important;
+    max-width: 100px !important;
     padding-bottom: 15px;
   }
     .nav{
@@ -111,6 +129,7 @@ html{
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
       li{
         padding: 0px 20px 0px 20px
       }
@@ -123,7 +142,6 @@ html{
       .nav-item:hover{
         color: white;
       }
-      
     }
 }
 
