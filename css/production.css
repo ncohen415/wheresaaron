@@ -723,16 +723,26 @@ textarea {
   .about-wrapper {
     flex-direction: column !important;
     justify-content: center; }
-    .about-wrapper img {
-      padding-bottom: 20px; }
-    .about-wrapper .about-text {
-      margin-right: 50px; } }
+    .about-wrapper .about-image {
+      padding-bottom: 20px;
+      max-width: 60% !important; }
+
+  .tracks-wrapper {
+    flex-basis: 25%;
+    flex-wrap: wrap; }
+    .tracks-wrapper .soundcloud-track {
+      padding-bottom: 1em;
+      height: 50%;
+      width: 50%; } }
 a, a:hover {
   text-decoration: none; }
 
 .site-container {
   background: black;
   overflow-x: hidden; }
+
+html {
+  scroll-behavior: smooth; }
 
 .site-header-container {
   background: black;
@@ -785,7 +795,8 @@ a, a:hover {
   .start-container .social-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    margin-left: 25px; }
     .start-container .social-wrapper ul {
       padding-top: 30px;
       list-style-type: none;
@@ -793,11 +804,11 @@ a, a:hover {
       flex-direction: row;
       justify-content: center; }
       .start-container .social-wrapper ul li {
-        margin-left: -20px;
-        margin-right: -20px; }
+        margin-left: -25px;
+        margin-right: -25px; }
         .start-container .social-wrapper ul li .social-icon {
           height: auto;
-          max-width: 70%; }
+          max-width: 40%; }
 
 .about-container {
   display: flex;
@@ -853,8 +864,9 @@ a, a:hover {
       letter-spacing: .2em;
       color: white; }
   .music-container .tracks-wrapper {
-    display: inline-flex;
-    justify-content: center; }
+    display: flex;
+    justify-content: center;
+    padding-top: 30px; }
     .music-container .tracks-wrapper .soundcloud-track {
       padding-left: .5em;
       padding-right: .5em; }
