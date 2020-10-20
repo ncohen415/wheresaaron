@@ -13,7 +13,9 @@
         display: flex !important; }
 
   .collapse-nav {
-    display: block !important; }
+    display: block !important;
+    background: black;
+    border: none; }
 
   .logo {
     display: none; }
@@ -26,7 +28,7 @@
     justify-content: center; }
     .about-wrapper .about-image {
       padding-bottom: 20px;
-      max-width: 60% !important; }
+      max-width: 60%; }
 
   .tracks-wrapper {
     flex-basis: 25%;
@@ -127,29 +129,30 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    .about-container .about-wrapper img {
-      max-width: 5%;
+    .about-container .about-wrapper .archive {
+      max-width: 10%;
       max-height: auto;
-      display: inline-block; }
-  .about-container .section-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 30px; }
-    .about-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
-  .about-container .about-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .about-container .about-image img {
-      max-width: 50%;
-      border-radius: 50%; }
-  .about-container .about-text {
-    margin-left: 60px;
-    margin-right: 60px; }
+      display: inline-block;
+      margin-left: -10px; }
+    .about-container .about-wrapper .section-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 30px; }
+      .about-container .about-wrapper .section-header h1 {
+        letter-spacing: .2em;
+        color: white; }
+    .about-container .about-wrapper .about-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .about-container .about-wrapper .about-image img {
+        max-width: 50%;
+        border-radius: 50%; }
+    .about-container .about-wrapper .about-text {
+      margin-left: 60px;
+      margin-right: 60px; }
 
 .music-container {
   display: flex;

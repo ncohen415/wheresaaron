@@ -28,7 +28,45 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
             dropDown.classList.toggle('show');
         })
     }
-    //NAVBAR SCROLL
+
+    //NAVBAR SMOOTH SCROLL
+
+    $("#music").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#music-section").offset().top -95},
+            1000);
+    });
+    $("#video").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#video-section").offset().top -95},
+            1000);
+    });
+    $("#events").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#events-section").offset().top -95},
+            1000);
+    });
+    $("#about").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about-section").offset().top -95},
+            1000);
+    });
+    $("#contact").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact-section").offset().top -95},
+            1000);
+    });
+
+
+    //EASTER EGG ANIMATION
+    let egg = document.querySelector('.archive');
+
+    egg.addEventListener('mouseover', function(event){
+        egg.classList.add('animate');
+    })
+
+
+
  });
 // Avoid `console` errors in browsers that lack a console.
 (function() {

@@ -48,6 +48,8 @@ $content-font: 'PT Sans', sans-serif;
 
   .collapse-nav{
     display: block !important;
+    background: black;
+    border: none;
   }
 
   .logo{
@@ -70,7 +72,7 @@ $content-font: 'PT Sans', sans-serif;
     justify-content: center;
     .about-image{
       padding-bottom: 20px;
-      max-width: 60% !important;
+      max-width: 60%;
     }
   }
 
@@ -208,11 +210,11 @@ html{
       display: flex;
       flex-direction: row;
       align-items: center;
-      img{
-        max-width: 5%;
+      .archive{
+        max-width: 10%;
         max-height: auto;
         display: inline-block;
-      }
+        margin-left: -10px;
     }
     .section-header{
       display: flex;
@@ -229,10 +231,11 @@ html{
       display: flex;
       flex-direction: row;
       justify-content: center;
-      img{ 
+      img{
         max-width: 50%;
         border-radius: 50%;
       }
+
     }
     .about-text{
       margin-left: 60px;
@@ -240,7 +243,7 @@ html{
     }
 
   }
-
+  }
 //MUSIC
   .music-container{
     display: flex;
