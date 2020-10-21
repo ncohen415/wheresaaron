@@ -53,7 +53,9 @@
     egg.addEventListener('mouseover', function(event){
         egg.classList.add('animate');
     })
-
+    egg.addEventListener('mouseout', function(event){
+        egg.classList.remove('animate');
+    })
 
 
  });

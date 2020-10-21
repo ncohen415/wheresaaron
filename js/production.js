@@ -64,7 +64,9 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
     egg.addEventListener('mouseover', function(event){
         egg.classList.add('animate');
     })
-
+    egg.addEventListener('mouseout', function(event){
+        egg.classList.remove('animate');
+    })
 
 
  });

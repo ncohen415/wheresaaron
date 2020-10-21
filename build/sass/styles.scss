@@ -203,19 +203,6 @@ html{
     padding-bottom: 30px;
     border-bottom: solid;
     border-color: white;
-    p{
-      color: white;
-    }
-    .about-wrapper{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .archive{
-        max-width: 10%;
-        max-height: auto;
-        display: inline-block;
-        margin-left: -10px;
-    }
     .section-header{
       display: flex;
       flex-direction: row;
@@ -225,6 +212,21 @@ html{
         h1{
           letter-spacing: .2em;
           color: white;
+        }
+      }
+    .about-wrapper{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      .archive{
+        max-width: 10%;
+        max-height: auto;
+        display: inline-block;
+        margin-left: -10px;
+        transition: 1s ease-in-out;
+        &.animate{
+          transform: scale(3) rotate(720deg);
         }
     }
     .about-image{
@@ -241,7 +243,9 @@ html{
       margin-left: 60px;
       margin-right: 60px;
     }
-
+    p{
+      color: white;
+    }
   }
   }
 //MUSIC
