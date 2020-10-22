@@ -726,7 +726,12 @@ textarea {
     border: none; }
 
   .logo {
-    display: none; }
+    display: none !important; }
+
+  .logo2 {
+    display: block !important;
+    background: black;
+    border: none; }
 
   .album {
     display: none; }
@@ -786,6 +791,9 @@ html {
       display: block; }
     .site-header-container .nav .nav-item:hover {
       color: white; }
+
+.logo2 {
+  display: none; }
 
 .start-container {
   display: flex;

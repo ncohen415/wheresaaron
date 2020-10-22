@@ -53,10 +53,14 @@ $content-font: 'PT Sans', sans-serif;
   }
 
   .logo{
-    display: none;
+    display: none !important;
   }
   
-  
+  .logo2{
+    display: block !important;
+    background: black;
+    border: none;
+  }
   
   //START SECTION
 
@@ -88,7 +92,6 @@ $content-font: 'PT Sans', sans-serif;
     }
   }
 }
-
 
 // GLOBAL
 a, a:hover{
@@ -145,6 +148,10 @@ html{
         color: white;
       }
     }
+}
+
+.logo2{
+  display: none;
 }
 
 
