@@ -11,12 +11,19 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 
  $(document).ready(function(){
 
+  //LOADER
+
+  const loader = document.querySelector('.loader');
+
+  window.addEventListener('load', (event)=>{
+    loader.classList.add('fadeout')
+    console.log('loaded');
+  })
+
     //NAVBAR TOGGLE
     let button = document.querySelector('.collapse-nav');
     let dropDown = document.querySelector('.dropdown');
     let navItem = document.querySelectorAll('.nav-item');
-
-    console.log(navItem);
 
 
     button.addEventListener('click', function(event){
@@ -30,33 +37,33 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
     }
 
     //NAVBAR SMOOTH SCROLL
-
-    $("#music").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#music-section").offset().top -95},
-            1000);
+    
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top - 95
+          }, 500, function() {
+            console.log('done');
+          });
+        }
+      }
     });
-    $("#video").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#video-section").offset().top -95},
-            1000);
-    });
-    $("#events").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#events-section").offset().top -95},
-            1000);
-    });
-    $("#about").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#about-section").offset().top -95},
-            1000);
-    });
-    $("#contact").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#contact-section").offset().top -95},
-            1000);
-    });
-
 
     //EASTER EGG ANIMATION
     let egg = document.querySelector('.archive');
