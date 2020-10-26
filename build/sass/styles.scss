@@ -120,11 +120,13 @@ ul{
   background: black;
   opacity: 1;
   transition: 2s ease-in-out;
+    img{
+      max-width: 500px;
+    }
     &.fadeout{
       opacity: 0;
-
+      z-index: -5;
     }
-
 }
 
 
@@ -179,7 +181,7 @@ ul{
 .start-container{
   display: flex;
   flex-direction: column;
-  padding-top: 260px;
+  padding-top: 220px;
   padding-bottom: 30px;
   border-bottom: solid;
   border-color: white;
