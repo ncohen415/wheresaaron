@@ -1,3 +1,14 @@
+//FONTS
+@font-face{
+  font-family: "Ransom";
+  src: url(/Users/nathancohen/Desktop/coding-projects/wheresaaron/fonts/ransom.ttf);
+}
+
+@font-face{
+  font-family: "Splendid";
+  src: url(/Users/nathancohen/Desktop/coding-projects/wheresaaron/fonts/splendid.ttf);
+}
+
 // Global variables
 $logo-font: 'Titillium Web', sans-serif;
 $header-font: 'Istok Web', sans-serif;
@@ -93,6 +104,10 @@ $content-font: 'PT Sans', sans-serif;
 }
 
 // GLOBAL
+p{
+  font-family: 'Splendid';
+  font-size: 20px;
+}
 a, a:hover{
   text-decoration: none;
 }
@@ -158,6 +173,8 @@ ul{
       justify-content: center;
       align-items: center;
         li{
+          font-size: 24px;
+          font-family: 'Ransom';
           padding: 0px 20px 0px 20px
         }
         .nav-item{
@@ -181,7 +198,7 @@ ul{
 .start-container{
   display: flex;
   flex-direction: column;
-  padding-top: 220px;
+  padding-top: 170px;
   padding-bottom: 30px;
   border-bottom: solid;
   border-color: white;
@@ -224,59 +241,7 @@ ul{
 }
 
 
-  // ABOUT
-  .about-container{
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid;
-    border-color: white;
-    .section-header{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      padding-bottom: 30px;
-        h1{
-          letter-spacing: .2em;
-          color: white;
-        }
-      }
-    .about-wrapper{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      
-      .archive{
-        max-width: 10%;
-        max-height: auto;
-        display: inline-block;
-        margin-left: -10px;
-        transition: 1s ease-in-out;
-        &.animate{
-          transform: scale(3) rotate(720deg);
-        }
-    }
-    .about-image{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      img{
-        max-width: 50%;
-        border-radius: 50%;
-      }
-
-    }
-    .about-text{
-      margin-left: 60px;
-      margin-right: 60px;
-    }
-    p{
-      color: white;
-    }
-  }
-  }
+  
 //MUSIC
   .music-container{
     display: flex;
@@ -292,8 +257,10 @@ ul{
       width: 100%;
       padding-bottom: 30px;
         h1{
-          letter-spacing: .2em;
+          letter-spacing: .075em;
           color: white;
+          font-family: 'Ransom';
+          font-size: 85px;
         }
     }
     .tracks-wrapper{
@@ -305,27 +272,6 @@ ul{
         padding-right: .5em;
       }
 
-    }
-  }
-
-  //EVENTS
-  .events-container{
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid;
-    border-color: white;
-    .section-header{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      padding-bottom: 30px;
-        h1{
-          letter-spacing: .2em;
-          color: white;
-        }
     }
   }
 
@@ -344,8 +290,10 @@ ul{
       width: 100%;
       padding-bottom: 30px;
       h1{
-        letter-spacing: .2em;
+        letter-spacing: .075em;
         color: white;
+        font-size: 85px;
+        font-family: 'Ransom';
       }
     }
     .video-wrapper{
@@ -357,7 +305,86 @@ ul{
     }
   }
 
+  //EVENTS
+  .events-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid;
+    border-color: white;
+    .section-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 30px;
+        h1{
+          letter-spacing: .075em;
+          color: white;
+          font-size: 85px;
+          font-family: 'Ransom';
+        }
+    }
+  }
 
+
+
+// ABOUT
+.about-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-color: white;
+  .section-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+      h1{
+        letter-spacing: .075em;
+        font-size: 85px;
+        color: white;
+        font-family: 'Ransom';
+      }
+    }
+  .about-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .archive{
+      max-width: 10%;
+      max-height: auto;
+      display: inline-block;
+      margin-left: -10px;
+      transition: 1s ease-in-out;
+      &.animate{
+        transform: scale(3) rotate(720deg);
+      }
+  }
+  .about-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 50%;
+    img{
+      max-width: 40%;
+      border-radius: 50%;
+    }
+
+  }
+  .about-text{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  p{
+    color: white;
+  }
+}
+}
 
   // CONTACT
   .contact-container{
@@ -372,8 +399,10 @@ ul{
       width: 100%;
       padding-bottom: 30px;
         h1{
-          letter-spacing: .2em;
+          letter-spacing: .075em;
           color: white;
+          font-size: 85px;
+          font-family: 'Ransom';
         }
     }
   }

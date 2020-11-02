@@ -706,6 +706,12 @@ textarea {
     }
 }
 
+@font-face {
+  font-family: "Ransom";
+  src: url(/Users/nathancohen/Desktop/coding-projects/wheresaaron/fonts/ransom.ttf); }
+@font-face {
+  font-family: "Splendid";
+  src: url(/Users/nathancohen/Desktop/coding-projects/wheresaaron/fonts/splendid.ttf); }
 @media (max-width: 767px) {
   .site-header-wrapper {
     display: flex;
@@ -749,6 +755,10 @@ textarea {
       padding-bottom: 1em;
       height: 50%;
       width: 50%; } }
+p {
+  font-family: 'Splendid';
+  font-size: 20px; }
+
 a, a:hover {
   text-decoration: none; }
 
@@ -801,6 +811,8 @@ ul {
     justify-content: center;
     align-items: center; }
     .site-header-container .nav li {
+      font-size: 24px;
+      font-family: 'Ransom';
       padding: 0px 20px 0px 20px; }
     .site-header-container .nav .nav-item {
       color: #696969;
@@ -815,7 +827,7 @@ ul {
 .start-container {
   display: flex;
   flex-direction: column;
-  padding-top: 220px;
+  padding-top: 170px;
   padding-bottom: 30px;
   border-bottom: solid;
   border-color: white; }
@@ -849,47 +861,6 @@ ul {
           height: auto;
           max-width: 40%; }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: solid;
-  border-color: white; }
-  .about-container .section-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 30px; }
-    .about-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
-  .about-container .about-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .about-container .about-wrapper .archive {
-      max-width: 10%;
-      max-height: auto;
-      display: inline-block;
-      margin-left: -10px;
-      transition: 1s ease-in-out; }
-      .about-container .about-wrapper .archive.animate {
-        transform: scale(3) rotate(720deg); }
-    .about-container .about-wrapper .about-image {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .about-container .about-wrapper .about-image img {
-        max-width: 50%;
-        border-radius: 50%; }
-    .about-container .about-wrapper .about-text {
-      margin-left: 60px;
-      margin-right: 60px; }
-    .about-container .about-wrapper p {
-      color: white; }
-
 .music-container {
   display: flex;
   flex-direction: column;
@@ -904,8 +875,10 @@ ul {
     width: 100%;
     padding-bottom: 30px; }
     .music-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
+      letter-spacing: .075em;
+      color: white;
+      font-family: 'Ransom';
+      font-size: 85px; }
   .music-container .tracks-wrapper {
     display: flex;
     justify-content: center;
@@ -913,23 +886,6 @@ ul {
     .music-container .tracks-wrapper .soundcloud-track {
       padding-left: .5em;
       padding-right: .5em; }
-
-.events-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: solid;
-  border-color: white; }
-  .events-container .section-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 30px; }
-    .events-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
 
 .video-container {
   display: flex;
@@ -945,14 +901,79 @@ ul {
     width: 100%;
     padding-bottom: 30px; }
     .video-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
+      letter-spacing: .075em;
+      color: white;
+      font-size: 85px;
+      font-family: 'Ransom'; }
   .video-container .video-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: .5em;
     padding-right: .5em; }
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-color: white; }
+  .events-container .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    .events-container .section-header h1 {
+      letter-spacing: .075em;
+      color: white;
+      font-size: 85px;
+      font-family: 'Ransom'; }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-color: white; }
+  .about-container .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+    .about-container .section-header h1 {
+      letter-spacing: .075em;
+      font-size: 85px;
+      color: white;
+      font-family: 'Ransom'; }
+  .about-container .about-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .about-container .about-wrapper .archive {
+      max-width: 10%;
+      max-height: auto;
+      display: inline-block;
+      margin-left: -10px;
+      transition: 1s ease-in-out; }
+      .about-container .about-wrapper .archive.animate {
+        transform: scale(3) rotate(720deg); }
+    .about-container .about-wrapper .about-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      max-width: 50%; }
+      .about-container .about-wrapper .about-image img {
+        max-width: 40%;
+        border-radius: 50%; }
+    .about-container .about-wrapper .about-text {
+      margin-left: 60px;
+      margin-right: 60px; }
+    .about-container .about-wrapper p {
+      color: white; }
 
 .contact-container {
   display: flex;
@@ -966,7 +987,9 @@ ul {
     width: 100%;
     padding-bottom: 30px; }
     .contact-container .section-header h1 {
-      letter-spacing: .2em;
-      color: white; }
+      letter-spacing: .075em;
+      color: white;
+      font-size: 85px;
+      font-family: 'Ransom'; }
 
 /*# sourceMappingURL=styles.css.map */
